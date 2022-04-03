@@ -1,0 +1,32 @@
+List<Integer> rollNumbers = new List<Integer>{11008890,11008100,11007231};
+System.debug(rollNumbers);
+
+//add more items to the list
+rollNumbers.add(89897767);
+rollNumbers.add(89897764);
+rollNumbers.add(89897765);
+System.debug(rollNumbers);
+
+//get index 1 from the List
+System.debug(rollNumbers.get(1));
+
+//add new number to the existing list at index 4
+rollNumbers.add(4,999990000);
+System.debug(rollNumbers);
+
+//print size from the list
+System.debug(rollNumbers.size());
+
+//remove index 3
+System.debug(rollNumbers.remove(3));
+System.debug(rollNumbers.size());
+
+//update index 1
+rollNumbers.set(1,4444444);
+System.debug(rollNumbers);
+
+
+//clear list
+rollNumbers.clear();
+System.debug(rollNumbers);
+System.debug(rollNumbers.size());
