@@ -1,0 +1,32 @@
+Set<Integer> rollNumbers = new Set<Integer>{11008890,11008100,11007231};
+System.debug(rollNumbers);
+
+//add more items to the list
+rollNumbers.add(89897767);
+rollNumbers.add(89897764);
+rollNumbers.add(89897765);
+System.debug(rollNumbers);
+
+//Duplicate Item - Not Allowed
+rollNumbers.add(89897767);
+System.debug(rollNumbers);
+
+//Contain Methods
+System.debug(rollNumbers.contains(89897767));
+System.debug(rollNumbers.contains(3695874));
+
+//delete items
+rollNumbers.remove(89897764);
+System.debug(rollNumbers);
+
+//return size in the set
+System.debug(rollNumbers.size());
+
+//Is Empty methods
+System.debug(rollNumbers.IsEmpty());
+
+//clear methods
+rollNumbers.clear();
+
+//Is Empty methods
+System.debug(rollNumbers.IsEmpty());
