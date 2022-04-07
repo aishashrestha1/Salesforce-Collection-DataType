@@ -1,0 +1,35 @@
+Map<Integer,String> classRoom = new Map<Integer,String>();
+System.debug(classRoom);
+
+
+//add item in the Map collection Data Set
+classRoom.put(101,'Aisha');
+classRoom.put(102,'Darrell');
+classRoom.put(103,'Walter');
+System.debug(classRoom);
+
+
+//add new item
+classRoom.put(104,'Akash');
+System.debug(classRoom);
+
+//Update item in the Map set
+classRoom.put(104,'Laxmi');
+System.debug(classRoom);
+
+//get item from the Map Set
+System.debug(classRoom.get(103));
+
+//remove item from the Map Set
+classRoom.remove(104);
+System.debug(classRoom);
+    
+//Get all keys
+System.debug(classRoom.KeySet());
+
+//Get all Values
+System.debug(classRoom.Values());
+
+//check if map has the key
+System.debug(classRoom.containsKey(103));
+System.debug(classRoom.containsKey(203));
