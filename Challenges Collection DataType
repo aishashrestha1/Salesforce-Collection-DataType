@@ -1,0 +1,29 @@
+/*
+Write all posts and categories 
+
+Categories = (Apex,Lightning)
+
+Posts for Apex
+1. Demystifying Apex Collections
+2. Datatypes and Variables in Apex
+
+Posts for Lightning
+1. Events in Aura framework
+2. Developing reusable components
+*/
+
+
+//post for apex category
+Set<String> category1 = new Set<String>{'1. Demystifying Apex Collections','2. Datatypes and Variables in Apex'};
+//post for Lightning category
+Set<String> category2 = new Set<String>{'1. Events in Aura framework','2. Developing reusable components'};
+
+    //map can store collection as its values
+    //map to store the categories and post lists
+Map<String,Set<String>> classRoom = new Map<String,Set<String>>();
+
+//insert categories
+classRoom.put('Apex',category1);
+classRoom.put('Lightning',category2);
+System.debug(classRoom);
+              
