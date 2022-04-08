@@ -1,0 +1,38 @@
+//Pizza Rates
+final Integer oneSlice = 8;
+final Integer twoThreeSlice = 7;
+final Integer threeSlice = 6;
+
+//Boys Order
+Integer rossOrder = 3;
+Integer ChandlerOrder = 1;
+Integer joeyOrder = 4;
+
+//Split the bill
+Integer numbersOfSlices = 0;
+
+
+//Calculate RossOrder Amount
+numbersOfSlices = rossOrder;
+Integer rossPay = numbersOfSlices == 1? oneSlice * numbersOfSlices :
+       (rossOrder <= 3 ?  twoThreeSlice * numbersOfSlices : threeSlice * numbersOfSlices);
+ 
+System.debug('Ross has to pay: '+rossPay);
+
+//Calculate Chandler Amount
+numbersOfSlices = ChandlerOrder;
+Integer chandlerPay = numbersOfSlices == 1? oneSlice * numbersOfSlices :
+       (numbersOfSlices <= 3 ?  twoThreeSlice * numbersOfSlices : threeSlice * numbersOfSlices);
+ 
+System.debug('Chandler has to pay: '+chandlerPay);
+
+//Calculate Joey Amount
+numbersOfSlices = joeyOrder;
+Integer joeyPay = numbersOfSlices == 1? oneSlice * numbersOfSlices :
+       (numbersOfSlices <= 3 ?  twoThreeSlice * numbersOfSlices : threeSlice * numbersOfSlices);
+ 
+System.debug('Joey has to pay: '+joeyPay);
+
+    
+
+    
